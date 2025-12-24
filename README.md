@@ -31,3 +31,6 @@ The examples are organized into subfolders, according to the their category.
   - Run to generate fresh STL (not stored in `stl_exports/` by default).
 
 STL exports are checked in under `stl_exports/` for quick 3D printing. To regenerate, set the desired task in `Program.cs` and run `dotnet run` (voxel size currently 0.4 mm).***
+
+### Demo video
+- Functional engine print clip: https://youtube.com/shorts/4WdTu9MskqU?si=fdZ33Wvz4VQH_3zT
