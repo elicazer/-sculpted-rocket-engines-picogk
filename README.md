@@ -18,8 +18,16 @@ The examples are organized into subfolders, according to the their category.
 
 ## Added engines and exports
 
-- `FunctionalRocketEngine` – printable liquid engine with helical regen channels (see `stl_exports/FunctionalRocketEngine*.stl.gz` and cross-section STL).
-- `SculptedRocketEngine` – Leap71-inspired stylized engine with twisted fins and flow ribs (see `stl_exports/SculptedRocketEngine*.stl.gz` and cross-section STL).
-- `FluidManifold` – branching fluid manifold demo (STL generated on run).
+- `FunctionalRocketEngine`  
+  - Smooth de Laval interior with variable-radius throat and helical regenerative channels, injector face, ribs, and bolt-on flange.  
+  - STL exports: `stl_exports/FunctionalRocketEngine.stl.gz` (full) and `stl_exports/FunctionalRocketEngine_CrossSection.stl`.  
+  - Print tip: Z-up (nozzle down) to keep channels self-supporting; let slicer add external supports only.
+- `SculptedRocketEngine`  
+  - Leap71-inspired exterior: twisted throat fins, flowing surface ribs, sculpted grooves, and enlarged mounting boss; same smooth internal nozzle.  
+  - STL exports: `stl_exports/SculptedRocketEngine.stl.gz` (full) and `stl_exports/SculptedRocketEngine_CrossSection.stl`.  
+  - Print tip: Z-up; the sculpted features are fused to the shell for single-piece printing.
+- `FluidManifold`  
+  - Branching additive-friendly manifold with tapered radii and cross-section output for flow visualization.  
+  - Run to generate fresh STL (not stored in `stl_exports/` by default).
 
-STL exports are checked in under `stl_exports/` for quick 3D printing. To regenerate, run `dotnet run` (uses the task set in `Program.cs`).
+STL exports are checked in under `stl_exports/` for quick 3D printing. To regenerate, set the desired task in `Program.cs` and run `dotnet run` (voxel size currently 0.4 mm).***
