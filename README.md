@@ -15,3 +15,11 @@ For more information, see the [PicoGK documentation on PicoGK.org](https://picog
 Download this example repository, open in VisualStudio Code, and run the code `Program.cs`.
 
 The examples are organized into subfolders, according to the their category.
+
+## Added engines and exports
+
+- `FunctionalRocketEngine` – printable liquid engine with helical regen channels (see `stl_exports/FunctionalRocketEngine*.stl.gz` and cross-section STL).
+- `SculptedRocketEngine` – Leap71-inspired stylized engine with twisted fins and flow ribs (see `stl_exports/SculptedRocketEngine*.stl.gz` and cross-section STL).
+- `FluidManifold` – branching fluid manifold demo (STL generated on run).
+
+STL exports are checked in under `stl_exports/` for quick 3D printing. To regenerate, run `dotnet run` (uses the task set in `Program.cs`).
